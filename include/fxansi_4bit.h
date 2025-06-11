@@ -8,7 +8,9 @@ extern "C" {
 // ==========================
 // === Functions ===
 // ==========================
-const char* build_ansi_color(const char *fg_color_name, const char *bold_str, const char *bg_color_name);
+const char* build_ansi(const char *fg_color_name, const char *bold_str, const char *bg_color_name);
+const char *build_ansi_fg(const char *fg_color_name);
+const char *build_ansi_bg(const char *bg_color_name);
 
 // ==========================
 // === Reset & Basic ===
