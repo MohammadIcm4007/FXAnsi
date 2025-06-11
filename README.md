@@ -1,6 +1,6 @@
 # FXAnsi
 
-FXAnsi is a lightweight and simple C library that provides extensive support for ANSI colors and effects in the terminal.
+FXAnsi is a lightweight and simple C and C++ library that provides extensive support for ANSI colors and effects in the terminal.
 
 ## Features
 
