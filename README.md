@@ -12,7 +12,9 @@ FXAnsi is a lightweight and simple C and C++ library that provides extensive sup
 
 ## Installation
 
-Simply add the source files to your project and include the `fxansi.h` header.
+If you only need the predefined ANSI variables (like `ANSI_RED`, `ANSI_BOLD`, etc.), it's enough to include the `fxansi.h` header in your project.
+
+However, if you also want to use the utility functions that generate ANSI codes (such as `build_ansi()` or `build_ansi_bg()`), you must add both the source files and the header to your project.
 
 ---
 
