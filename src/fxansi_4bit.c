@@ -4,8 +4,8 @@
 
 #define ANSI_ESCAPE "\033["
 
-// example: build_ansi_color_str("red", "bold", "blue") -> "\033[91;44m"
-const char *build_ansi_color_str(const char *fg_color_name, const char *bold_str, const char *bg_color_name)
+// example: build_ansi("red", "bold", "blue") -> "\033[91;44m"
+const char *build_ansi(const char *fg_color_name, const char *bold_str, const char *bg_color_name)
 {
     static char buffer[30];
 
@@ -75,4 +75,14 @@ const char *build_ansi_color_str(const char *fg_color_name, const char *bold_str
     }
 
     return buffer;
+}
+
+const char *build_ansi_fg(const char *fg_color_name)
+{
+    return build_ansi(fg_color_name, NULL, NULL);
+}
+
+const char *build_ansi_bg(const char *bg_color_name)
+{
+    return build_ansi(NULL, NULL, bg_color_name);
 }
